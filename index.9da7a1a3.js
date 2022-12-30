@@ -1,0 +1,2 @@
+var todoInput,errorInfo,addBtn,ulList,main=function(){prepareDOMElements(),prepareDOMEvents()},prepareDOMElements=function(){todoInput=document.querySelector(".todo-input"),errorInfo=document.querySelector(".error-info"),addBtn=document.querySelector(".btn-add"),ulList=document.querySelector(".todolist ul")},prepareDOMEvents=function(){};document.addEventListener("DOMContentLoaded",main);
+//# sourceMappingURL=index.9da7a1a3.js.map
