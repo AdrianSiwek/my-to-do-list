@@ -16,8 +16,21 @@ const prepareDOMElements = () => {
     ulList = document.querySelector('.todolist ul');
 }
 
+
+
 const prepareDOMEvents = () => {
-    
+    addBtn.addEventListener('clisk', newTask);
 }
+
+
+
+const newTask = () => {
+    if (todoInput.value !== '') {
+        console.log('ok')
+    } else {
+        errorInfo.textContent = 'Wpisz treść zadania';
+    }
+}
+
 
 document.addEventListener('DOMContentLoaded', main);
