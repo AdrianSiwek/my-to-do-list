@@ -1,0 +1,2 @@
+var todoInput,errorInfo,addBtn,ulList,main=function(){prepareDOMElements(),prepareDOMEvents()},prepareDOMElements=function(){todoInput=document.querySelector(".todo-input"),errorInfo=document.querySelector(".error-info"),addBtn=document.querySelector(".btn-add"),ulList=document.querySelector(".todolist ul")},prepareDOMEvents=function(){addBtn.addEventListener("clisk",newTask)},newTask=function(){""!==todoInput.value?console.log("ok"):errorInfo.textContent="Wpisz treść zadania"};document.addEventListener("DOMContentLoaded",main);
+//# sourceMappingURL=index.0861439e.js.map
