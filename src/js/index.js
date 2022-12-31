@@ -22,6 +22,12 @@ const prepareDOMElements = () => {
     errorInfo = document.querySelector('.error-info');
     addBtn = document.querySelector('.btn-add');
     ulList = document.querySelector('.todolist ul');
+    
+    popup = document.querySelector('.popup');
+    popupInfo = document.querySelector('.popup-info');
+    popupInput = document.querySelector('.popup-input');
+    popupCloseBtn = document.querySelector('.cancel');
+    popupAddBtn = document.querySelector('.accept');
 }
 
 
@@ -29,6 +35,7 @@ const prepareDOMElements = () => {
 const prepareDOMEvents = () => {
     addBtn.addEventListener('click', addNewTodo);
     ulList.addEventListener('click', checkClick);
+    popupCloseBtn.addEventListener('click',closePopup);
 }
 
 
@@ -76,12 +83,20 @@ const checkClick = e => {
         e.target.closest('li').classList.toggle('complete');
         e.target.classList.toggle('complete');
     } else if (e.target.matches('.edit')) {
-        e.target.closest('li').classList.toggle('edit');
-        e.target.classList.toggle('edit');
+        editTodo();
     } else if (e.target.matches('.delete')) {
         e.target.closest('li').classList.toggle('delete');
         e.target.classList.toggle('delete');
     }
 }
+
+const editTodo = () => {
+    popup.style.display = 'flex';
+}
+
+const closePopup = e => {
+    popup.style.display = 'none';
+}
+
 
 document.addEventListener('DOMContentLoaded', main);
