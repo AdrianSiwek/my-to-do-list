@@ -119,6 +119,6 @@ const deleteTodo = (e) => {
 
     if (allTodos.length === 0) {
         errorInfo.textContent = 'Brak zadań na liście';
+    }
 }
-
 document.addEventListener('DOMContentLoaded', main);
