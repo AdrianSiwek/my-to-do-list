@@ -99,6 +99,7 @@ const editTodo = e => {
 
 const closePopup = e => {
     popup.style.display = 'none';
+    popupInfo.textContent = '';
 }
 
 
@@ -106,6 +107,7 @@ const changeTodoText = () => {
     if (popupInput.value !== '') {
         todoToEdit.firstChild.textContent = popupInput.value;
         popup.style.display = 'none';
+        popupInfo.textContent = '';
     } else {
         popupInfo.textContent = 'Musisz podać jakąś treść';
     }
