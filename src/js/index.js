@@ -4,6 +4,13 @@ let addBtn; //przycisk dodaje nowe elemnty do listy;
 let ulList; // lista zadań tagi ul
 let newTodo;
 
+let popup;
+let popupInfo; 
+let todoToEdit;
+let popupInput;
+let popupAddBtn;
+let popupCloseBtn;
+
 
 const main = () => {
     prepareDOMElements();
