@@ -1,3 +1,3 @@
-<a href="https://adriansiwek.github.io/my-to-do-list/"><p class="link">My todo list</p></a>
+<a class="link" href="https://adriansiwek.github.io/my-to-do-list/">My todo list</a>
 
 <h1>MY TODO LIST</h1>
